@@ -1,0 +1,27 @@
+﻿@model ContactsViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Contacts</h2>
+
+<ul>
+    @foreach (var contact in Model.Contacts)
+    {
+    <li>
+        <div>
+            <span>First Name:&nbsp;</span>
+            <span>@contact.FirstName</span>
+        </div>
+        <div>
+            <span>Last Name:&nbsp;</span>
+            <span>@contact.LastName</span>
+        </div>
+        <div>
+            <span>Telephone number:&nbsp;</span>
+            <span>@contact.PhoneNumber</span>
+        </div>
+
+    </li>
+    }
+</ul>
